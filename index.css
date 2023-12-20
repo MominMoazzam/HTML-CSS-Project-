@@ -1,0 +1,567 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans 3', sans-serif;
+    background-image: url("./images/banner.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    /* This background color we copy from eye dropper */
+    background-color: #f5f5f5;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 1.5%;
+}
+
+#left h1 {
+    font-size: 1rem;
+    /* 1rem = 16px */
+    color: white;
+}
+
+#left h1 span {
+    font-weight: 100;
+}
+
+#cont {
+    display: flex;
+    list-style-type: none;
+    margin: 0px;
+    align-items: center;
+}
+
+#cont a {
+    text-decoration: none;
+    padding: 1rem;
+    display: block;
+    color: white;
+}
+
+#cont button {
+    width: 5rem;
+    height: 2rem;
+    border-radius: 5px;
+    color: white;
+    background-color: transparent;
+    border: 2px solid green;
+}
+
+#menu {
+    list-style-type: none;
+    background-color: white;
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    padding: 0px;
+    width: 180%;
+    right: 0;
+    display: none;
+}
+
+#drop:hover #menu {
+    display: block;
+}
+
+#drop {
+    position: relative;
+}
+
+#menu a {
+    color: black;
+    border-bottom: 2px solid rgb(228, 224, 224);
+}
+
+#menu a:hover {
+    color: white;
+    background-color: rgb(248, 117, 70);
+}
+
+#menu2 {
+    background-color: white;
+    list-style-type: none;
+    padding: 0px;
+    position: absolute;
+    top: 0%;
+    right: 100%;
+    width: 100%;
+    display: none;
+}
+
+#drop2:hover #menu2 {
+    display: block;
+}
+
+#drop2 {
+    position: relative;
+    border-radius: 2px;
+}
+
+/* css of section  */
+
+#alpha {
+    /* this is the second way of moving the content in centre instead of display:flex
+  width: 40%;
+  margin: auto;
+  text-align: center; */
+
+    /* this is the third way of moving the content in centre when content is small instead of display:flex */
+    text-align: center;
+    margin-top: 6rem;
+}
+
+#alpha h1 {
+    color: white;
+    font-size: 3.5rem;
+    margin: 0px;
+}
+
+#alpha p {
+    color: white;
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+
+#alpha button {
+    width: 13%;
+    height: 3rem;
+    border-radius: 5px;
+    border: none;
+    color: gray;
+    margin-right: 1rem;
+}
+
+#alpha #Learn {
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.765);
+    color: white;
+}
+
+#mobile {
+    background-color: white;
+    /* this is the first way by using of display:flex */
+    /* display: flex;
+    justify-content: center; */
+
+    text-align: center;
+    width: 70%;
+    margin: auto;
+    border-radius: 5px;
+    padding-top: 2rem;
+    margin-top: 10rem;
+    color: gray;
+}
+
+#mobile h1 {
+    font-size: 2rem;
+}
+
+#mobile p {
+    border-top: 1px solid;
+    width: 60%;
+    margin: auto;
+    font-size: 1.2rem;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+}
+
+img {
+    width: 100%;
+}
+
+#icon {
+    background-color: white;
+    width: 70%;
+    margin: auto;
+    margin-top: 2rem;
+    border-radius: 2px;
+}
+
+/* for minute thing we can go for px but for width we go for % */
+
+#icon div {
+    width: 46%;
+    /* the above property will not wort because div is block level element */
+    display: inline-block;
+    padding-top: 2rem;
+    text-align: center;
+}
+
+.fa-bolt-lightning {
+    color: #ffffff;
+    font-size: 2rem;
+    background-color: #e89980;
+    border-radius: 80%;
+    padding: 1.8rem 2rem;
+}
+
+.fa-chart-area {
+    color: #ffffff;
+    font-size: 2rem;
+    border-radius: 80%;
+    background-color: #7fcdb8;
+    padding: 1.9rem 1.9rem;
+}
+
+.fa-cloud {
+    color: #ffffff;
+    font-size: 2rem;
+    border-radius: 80%;
+    background-color: #90b0ba;
+    padding: 2rem 1.8rem;
+}
+
+.fa-lock {
+    color: #ffffff;
+    font-size: 2rem;
+    border-radius: 80%;
+    background-color: #e5cb95;
+    padding: 1.8rem 2rem;
+}
+
+#div1 {
+    border-right: 2px solid #e5e5e5;
+    border-bottom: 2px solid #e5e5e5;
+    position: relative;
+    top: 7px;
+    left: 2.9px
+}
+
+#div4 {
+    border-top: 2px solid #e5e5e5;
+    border-left: 2px solid #e5e5e5;
+}
+
+#card {
+    width: 70%;
+    margin: auto;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    /* becuase horzontal will cover by justify content */
+}
+
+#card div {
+    background-color: white;
+    width: 48%;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#card div img {
+    width: 100%;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+#card div button{
+    width: 9rem;
+    height: 3rem;
+    background-color: #ffffff;
+    border: 2px solid #e8e8e8;
+    border-radius: 3px;
+    margin-bottom: 3rem;
+    font-size: 1rem;
+    color: #b09387;
+}
+
+#signup {
+    background-color: #e89980;
+    text-align: center;
+    margin-top: 7rem;
+    height: 17.5rem;
+    text-align: center;
+    padding-top: 3rem;
+}
+
+#signup h1 {
+    font-size: 2rem;
+    color: white;
+}
+
+#signup p {
+    color: white;
+}
+
+#signup div {
+    margin-top: 2.5rem;
+}
+
+#signup #email {
+    width: 16.9rem;
+    height: 2.8rem;
+    margin-right: 13px;
+    border: none;
+    border-radius: 5px;
+    background-color: #eba893;
+    color: white;
+}
+
+#signup button {
+    width: 7rem;
+    height: 2.8rem;
+    border: none;
+    background-color: white;
+    border-radius: 5px;
+    color: #eca18c;
+}
+
+footer {
+    height: 10rem;
+    padding-top: 8rem;
+    color:  #f0f0f0;
+}
+
+footer #icons {
+    font-size: 2.1rem;
+    display: flex;
+    justify-content: center;
+
+}
+
+footer .fa-twitter{
+    margin-right: 2rem;
+    color: #c6c6c6;
+}
+
+footer .fa-facebook-f{
+    margin-right: 2rem;
+    color: #c6c6c6;
+}
+
+footer .fa-instagram{
+    margin-right: 2rem;
+    color: #c6c6c6;
+}
+
+footer .fa-github{
+    margin-right: 2rem;
+    color: #c6c6c6;
+}
+
+footer .fa-basketball{
+    margin-right: 2rem;
+    color: #c6c6c6;
+}
+
+footer .fa-google-plus-g{
+    margin-right: 2rem;
+    color: #c6c6c6;
+}
+
+footer #links {
+    display: block;
+    display: flex;
+    justify-content: center;
+    color: #c6c6c6;
+}
+
+footer #links a{
+    color:  #c6c6c6;
+}
+
+footer #links h4{
+    margin-right: 2rem;
+}
+
+#mobile_menu{
+    display: none;
+}
+
+
+@media(max-width:600px)
+{
+    body {
+        background-size: 250%;
+        background-position-x: center;
+    }
+
+    #mobile_menu{
+        display: inline-block;
+        color: white;
+        background-color: gray;
+        padding: 5px 15px;
+        border-radius: 5px;
+        margin-top: 0.4rem;
+        margin-left: 0.4rem;
+    }
+
+    header
+    {
+        display: none;
+    }
+
+    #alpha { 
+        width: 80%;
+        margin: auto;
+        margin-top:3rem;
+    }
+
+    #alpha h1 {
+        font-size: 2rem;
+        margin: 0px;
+    }
+    
+    #alpha p {
+        font-size: 1.25rem;
+    }
+
+    #alpha button {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    #mobile {
+        text-align: center;
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    #mobile h1 {
+        font-size: 1.5rem;
+    }
+    
+    #mobile p {
+
+        width: 90%;
+        font-size: 1.2rem;
+    }
+
+    br{
+        display: none;
+    }
+
+    #icon {
+        width: 100%;
+        margin: auto;
+        margin-top: 2rem;
+    }
+
+    #icon div {
+        width: 100%;
+        color: #a7a7a7;
+        border-bottom: 0.05px solid #e5e5e5 ;
+        padding-bottom: 2rem;
+        padding-top: 2.5rem;
+        
+    }
+
+    #div1 {
+        border-right: none;
+        border-bottom: none;
+    }
+    
+    #div4 {
+        border-top: none;
+        border-left: none;
+    }
+
+    #icon #div4{
+        border-bottom: none;
+    }
+
+    .fa-bolt-lightning {
+        font-size: 2rem;
+        border-radius: 90%;
+        padding: 1.5rem 1.7rem;
+    }
+    
+    .fa-chart-area {
+        font-size: 2rem;
+        border-radius: 90%;
+        padding: 1.6rem 1.5rem;
+    }
+    
+    .fa-cloud {
+        font-size: 2rem;
+        border-radius: 90%;
+        padding: 1.5rem 1.3rem;
+    }
+    
+    .fa-lock {
+        font-size: 2rem;
+        border-radius: 90%;
+        padding: 1.5rem 1.7rem;
+    }
+
+    #card {
+        width: 100%;
+        display: block;
+    }
+
+    #card div {
+        width: 100%;
+        color:#a7a7a7;
+    }
+    
+    #card div img {
+        width: 100%;
+    }
+
+    #card div button{
+        width: 90%;
+        font-size: 14px;
+        color: #c4c4c4;
+    }
+
+    #signup {
+        width: 100%;
+        margin-top: 5px;
+        padding-top: 1rem;
+    }
+
+    #signup div {
+        margin-top: 1.2rem;
+    }
+
+    #signup #email {
+        display: inline;
+        width: 83%;
+        margin-left: 5.5px;
+    }
+    
+    #signup button {
+        display: inline;
+        width: 85%;
+        margin: 1rem;
+    }
+
+    footer {
+        height: 30rem;
+        padding-top: 4rem;
+        color:#c6c6c6;
+        padding-bottom: 4rem;
+    }
+
+    footer #links{
+        display: inline;
+        margin: auto;
+        text-align: center;
+        font-size: 1rem;
+    }
+    footer .fa-twitter{
+        font-size: 1.7rem;
+    }
+    
+    footer .fa-facebook-f{
+        font-size: 1.7rem;   
+    }
+    
+    footer .fa-instagram{
+        font-size: 1.7rem;
+    }
+    
+    footer .fa-github{
+        font-size: 1.7rem;
+    }
+    
+    footer .fa-basketball{
+        font-size: 1.7rem;
+    }
+    
+    footer .fa-google-plus-g{
+        font-size: 1.7rem;
+    }
+
+}
